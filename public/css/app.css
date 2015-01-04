@@ -1,0 +1,43 @@
+html, body {
+	width: 100%;
+	position: relative;
+	margin: 0px;
+}
+
+nav {
+	height: 40px;
+	background-color: #444;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	color: #ecf0f1;
+}
+
+nav .nav-containter {
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: #ecf0f1;
+    font-weight: bold;
+}
+
+.container {
+	margin-top: 40px;
+	padding: 10px;
+}
+
+.alert {
+	margin-top: 40px;
+	width: 100%;
+	padding: 10px;
+}
+
+.alert-error {
+	background-color: #f2dede;
+}
+
+.alert-success {
+	background-color: #dff0d8;
+}
