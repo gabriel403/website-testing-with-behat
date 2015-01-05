@@ -32,3 +32,10 @@ run behat test
 vendor/bin/behat --init
 vendor/bin/behat
 ```
+
+step-2:
+======
+
+We've installed behat add authentication.feature and run `vendor/bin/behat`.
+
+By default behat doesn't come with many helpers to testing.
