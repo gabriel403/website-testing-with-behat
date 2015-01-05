@@ -58,4 +58,4 @@ use Behat\MinkExtension\Context\MinkContext;
 class FeatureContext extends MinkContext
 ```
 
-Copy dist behat file to project root `cp vendor/behat/mink-extension/behat.yml.dist behat.yml` alter `base_url`
+Copy dist behat file to project root `cp vendor/behat/mink-extension/behat.yml.dist behat.yml` alter `base_url` and then run `vendor/bin/behat`.
