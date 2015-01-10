@@ -58,4 +58,15 @@ use Behat\MinkExtension\Context\MinkContext;
 class FeatureContext extends MinkContext
 ```
 
-Copy dist behat file to project root `cp vendor/behat/mink-extension/behat.yml.dist behat.yml` alter `base_url`
+Copy dist behat file to project root `cp vendor/behat/mink-extension/behat.yml.dist behat.yml` alter `base_url` and then run `vendor/bin/behat`.
+
+
+step-3:
+======
+`vendor/bin/behat -dl` this shows possible commands, if you want to see how they work we can open `MinkContext.php`
+
+More tests!
+
+And we can also run it like `vendor/bin/behat -f progress`
+
+
