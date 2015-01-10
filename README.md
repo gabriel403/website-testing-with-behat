@@ -70,3 +70,8 @@ More tests!
 And we can also run it like `vendor/bin/behat -f progress`
 
 
+step-3b:
+======
+Auth check!
+
+

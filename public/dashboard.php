@@ -1,3 +1,4 @@
+<?php include 'helpers/check_auth.php' ?>
 <!DOCTYPE html>
 <html>
   <head>
