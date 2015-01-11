@@ -17,5 +17,5 @@ Feature: Footer Navigation
     Given I am on "/"
     When I follow "legal"
     Then I should be on "/legal.php"
-      And the "title" element should contain "FAQ"
+      And the "title" element should contain "legal"
 
