@@ -11,11 +11,11 @@ Feature: Footer Navigation
     Given I am on "/"
     When I follow "FAQ"
     Then I should be on "/faq.php"
-      And I should see "FAQ"
+      And the "title" element should contain "FAQ"
 
   Scenario: Attempting to visit the legal link should take me to the legal page
     Given I am on "/"
     When I follow "legal"
     Then I should be on "/legal.php"
-      And I should see "FAQ"
+      And the "title" element should contain "legal"
 

@@ -84,4 +84,11 @@ Lots of frameworks build urls from configuration, so it's always good to check t
 More tests!
 
 
+step-4b:
+======
+FAQ and legal exist on all pages that have the lower nav bar, so it's a bit useless testing for them.
+
+But it also has these contained in the title elements, so we can test for that.
+
+
 
