@@ -9,8 +9,29 @@ nav {
 	background-color: #444;
 	width: 100%;
 	position: fixed;
-	top: 0px;
 	color: #ecf0f1;
+}
+
+nav.header {
+	top: 0px;
+}
+
+nav.footer {
+	bottom: 0px;
+}
+
+nav.footer a:link, nav.footer a:visited, nav.footer a:hover, nav.footer a:active {
+    font-weight: normal;
+}
+
+nav ul li{
+	display:inline-block;
+	margin-right: 0.7em;
+}
+
+nav ul{
+	margin-top: 0.7em;
+	margin-bottom: 0.7em;
 }
 
 nav .nav-containter {

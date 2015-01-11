@@ -75,3 +75,13 @@ step-3b:
 Auth check!
 
 
+step-4:
+======
+Footer navbar, legal and FAQ pages.
+
+Lots of frameworks build urls from configuration, so it's always good to check they still lead to the right place!
+
+More tests!
+
+
+
