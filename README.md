@@ -90,5 +90,10 @@ FAQ and legal exist on all pages that have the lower nav bar, so it's a bit usel
 
 But it also has these contained in the title elements, so we can test for that.
 
+step-4c:
+======
+Fix the legal test!
+
+
 
 
