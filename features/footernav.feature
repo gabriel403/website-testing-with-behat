@@ -3,10 +3,6 @@ Feature: Footer Navigation
   As a guest
   Something something
 
-  Rules:
-  - Email and Password required
-  - Email and Password should be known to the system
-
   Scenario: Attempting to visit the faq link should take me to the faq page
     Given I am on "/"
     When I follow "FAQ"
