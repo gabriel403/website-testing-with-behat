@@ -94,6 +94,8 @@ step-4c:
 ======
 Fix the legal test!
 
-
+step-5:
+======
+Authenticated nav bar!
 
 

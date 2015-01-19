@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Website Testing with Behat</title>
+    <title>Users - Website Testing with Behat</title>
     <link rel="stylesheet" type="text/css" href="/css/app.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
@@ -17,7 +17,13 @@
       </div>
     </nav>
     <?php include 'helpers/alerts.php'; ?>
-    <div class="container">You rock.</div>
+    <div class="container">
+      <h1>Bunch of noobs.</h1>
+      <ul>
+        <li>Noob 1</li>
+        <li>Noob 2</li>
+      </ul>
+    </div>
     <nav class="footer">
       <ul>
         <li><a href="/faq.php">FAQ</a></li>
