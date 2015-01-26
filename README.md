@@ -98,4 +98,12 @@ step-5:
 ======
 Authenticated nav bar!
 
+step-5b:
+======
+FeatureContext custom snippets
+
+Changes to `behat.yml/FeatureContext.php`
+
+
+
 

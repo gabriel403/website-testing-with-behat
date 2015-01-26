@@ -9,16 +9,18 @@ use Behat\MinkExtension\Context\MinkContext;
 /**
  * Defines application features from the specific context.
  */
-class FeatureContext extends MinkContext
+class FeatureContext extends MinkContext implements SnippetAcceptingContext
 {
     /**
-     * Initializes context.
-     *
-     * Every scenario gets its own context instance.
-     * You can also pass arbitrary arguments to the
-     * context constructor through behat.yml.
+     * @Given I am logged in as ":email" with password ":password"
      */
-    public function __construct()
+    public function iAmLoggedInAsWithPassword($email, $password)
     {
+        $this->visitPath("/");
+        $this->fillField("email", $email);
+        $this->fillField("password", $password);
+        $this->pressButton("Login");
+        $this->assertPageAddress("/dashboard.php");
+        $this->assertPageContainsText("Log out");
     }
 }
