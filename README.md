@@ -23,9 +23,8 @@ step-1:
 Quick overview of the code and then look at website, log in, log out, failed log in.
 
 composer.json and composer install
-behat init
-run behat test
-
+init behat
+run behat
 
 ```
 ./composer.phar install
