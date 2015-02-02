@@ -1,4 +1,5 @@
 <?php include 'helpers/check_auth.php' ?>
+<?php authorise('admin'); ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -12,7 +13,7 @@
       <div class='nav-containter'>
         Welcome <?= $_SESSION['user']['name'] ?>
         <a href="/logout.php">Log out</a>
-        <a href="/users.php">User Admin</a>
+        <?php if (authorised('admin')) { ?><a href="/users.php">User Admin</a><?php } ?>
         <a href="/settings.php">Settings</a>
       </div>
     </nav>

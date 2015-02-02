@@ -12,7 +12,8 @@ if (strlen($_POST['email']) === 0 || strlen($_POST['password']) === 0) {
 }
 
 $authDetails = [
-    ['email' => 'me@g403.co', 'password' => 'somepassword', 'details' => ['name' => 'Gabriel Baker']]
+    ['email' => 'me@g403.co', 'password' => 'somepassword', 'details' => ['name' => 'Gabriel Baker', 'roles' =>['admin', 'user']]],
+    ['email' => 'mu@g403.co', 'password' => 'somepassword', 'details' => ['name' => 'Gabriel Baker', 'roles' =>['user']]]
 ];
 
 $authenticated = false;

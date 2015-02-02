@@ -104,6 +104,9 @@ FeatureContext custom snippets
 
 Changes to `behat.yml/FeatureContext.php`
 
+step-6:
+======
+Roles for different authorisation levels
 
-
+`login.php`, `check_auth.php`, `dashboard.php`, `authenticated_nav.feature`
 
