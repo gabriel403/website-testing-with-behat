@@ -110,3 +110,10 @@ Roles for different authorisation levels
 
 `login.php`, `check_auth.php`, `dashboard.php`, `authenticated_nav.feature`
 
+step-7:
+======
+Javascript!
+
+Behat tests fail because goutte can't cope with JS!
+
+
