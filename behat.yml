@@ -6,7 +6,15 @@ default:
         - FeatureContext
   extensions:
     Behat\MinkExtension:
+      browser_name: phantomjs
+      javascript_session: selenium2
       base_url: http://0.0.0.0:8080/
+
       sessions:
         default:
           goutte: ~
+
+      selenium2:
+        wd_host: "http://localhost:8643/wd/hub"
+        capabilities: { "browser": "phantomjs" }
+

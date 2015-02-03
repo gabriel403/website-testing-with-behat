@@ -7,6 +7,7 @@ Feature: Authentication
   - Email and Password required
   - Email and Password should be known to the system
 
+  @javascript
   Scenario: Attempting to login with correct details should redirect me to the dashboard
     Given I am on "/"
     When I press "Login"
@@ -16,6 +17,7 @@ Feature: Authentication
     Then I should be on "/dashboard.php"
       And I should see "Log out"
 
+  @javascript
   Scenario: Attempting to login with in-correct password should show an error
     Given I am on "/"
     When I press "Login"
@@ -25,6 +27,7 @@ Feature: Authentication
     Then I should be on "/"
       And I should see "Invalid authentication details"
 
+  @javascript
   Scenario: Attempting to login with no details should show an error
     Given I am on "/"
     When I press "Login"

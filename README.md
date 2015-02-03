@@ -121,4 +121,15 @@ Change `authentication.feature` to press Login before entering text.
 
 Behat tests fail because goutte can't cope with JS!
 
+step-7b:
+======
+`composer.json` selenium driver
+`behat.yml` browser_name, javascript_session, selenium2 config
+
+install phantomjs and screen
+`screen phantomjs --webdriver=8643`
+
+`authentication.feature`
+add `@javascript` above js requiring tests
+
 
