@@ -9,7 +9,8 @@ Feature: Authentication
 
   Scenario: Attempting to login with correct details should redirect me to the dashboard
     Given I am on "/"
-    When I fill in "email" with "me@g403.co"
+    When I press "Login"
+      And I fill in "email" with "me@g403.co"
       And I fill in "password" with "somepassword"
       And I press "Login"
     Then I should be on "/dashboard.php"
@@ -17,7 +18,8 @@ Feature: Authentication
 
   Scenario: Attempting to login with in-correct password should show an error
     Given I am on "/"
-    When I fill in "email" with "me@g403.co"
+    When I press "Login"
+      And I fill in "email" with "me@g403.co"
       And I fill in "password" with "notapassword"
       And I press "Login"
     Then I should be on "/"
@@ -26,6 +28,7 @@ Feature: Authentication
   Scenario: Attempting to login with no details should show an error
     Given I am on "/"
     When I press "Login"
+      And I press "Login"
     Then I should be on "/"
       And I should see "email or password not set"
 

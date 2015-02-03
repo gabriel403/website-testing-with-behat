@@ -114,6 +114,11 @@ step-7:
 ======
 Javascript!
 
+Change `authentication.feature` to press Login before entering text.
+
+`vendor/bin/behat features/authentication.feature` to run a single file of features
+
+
 Behat tests fail because goutte can't cope with JS!
 
 
