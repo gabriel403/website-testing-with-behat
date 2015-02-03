@@ -29,11 +29,11 @@ Feature: Authenticated Navigation
 
 
 
-  Scenario: Navigation should not contain User Admin link when authenticated as admin
+  Scenario: Navigation should not contain User Admin link when authenticated as user
     Given I am logged in as "mu@g403.co" with password "somepassword"
     Then I should not see "User Admin"
 
-  Scenario: Attempting to visit the user admin page directly whilst logged in should redirect and error
+  Scenario: Attempting to visit the user admin page directly whilst logged in as user should redirect and error
     Given I am logged in as "mu@g403.co" with password "somepassword"
     When I go to "/users.php"
     Then I should be on "/dashboard.php"
