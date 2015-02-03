@@ -132,4 +132,4 @@ install phantomjs and screen
 `authentication.feature`
 add `@javascript` above js requiring tests
 
-
+`vendor/bin/behat features/authentication.feature`
