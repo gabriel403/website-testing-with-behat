@@ -12,7 +12,7 @@
     <nav class="header">
       <div class='nav-containter'>
         <form action="/login.php" method="post">
-          <button id="loginButton" type="button">Login</button>
+          <button id="loginButton" type="submit">Login</button>
         </form>
       </div>
     </nav>
