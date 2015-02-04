@@ -5,7 +5,7 @@
     <title>Website Testing with Behat</title>
     <link rel="stylesheet" type="text/css" href="/css/app.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="/js/jquery-2.1.3.min.js"></script>
     <script src="/js/awesome.js"></script>
   </head>
   <body>
