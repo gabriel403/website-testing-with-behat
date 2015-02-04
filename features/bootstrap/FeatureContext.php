@@ -24,4 +24,19 @@ class FeatureContext extends MinkContext implements SnippetAcceptingContext
         $this->assertPageAddress("/dashboard.php");
         $this->assertPageContainsText("Log out");
     }
+
+    /**
+     * @AfterStep
+     */
+    public function afterStep($afterStepScope)
+    {
+        if ($this->getMinkParameter('browser_name') == 'phantomjs' && $afterStepScope->getTestResult()->getResultCode() === TestResult::FAILED) {
+            if (!file_exists('behatscreenshots')) {
+                mkdir('behatscreenshots', 0777, true);
+            }
+
+            file_put_contents("behatscreenshots/screen_".time().".png", $this->getSession()->getDriver()->getScreenshot(), FILE_APPEND);
+            $this->printCurrentUrl();
+        }
+    }
 }

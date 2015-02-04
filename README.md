@@ -133,3 +133,12 @@ install phantomjs and screen
 add `@javascript` above js requiring tests
 
 `vendor/bin/behat features/authentication.feature`
+
+step-7c:
+======
+`afterStep` added in `FeatureContext.php`
+
+Create deliberate error and see a screenshot!
+
+
+
